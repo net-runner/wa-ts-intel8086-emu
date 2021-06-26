@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Intel 8086 simulator created using Typescript and WebAssembly">
+    <meta name="keywords" content="intel 8086 typescript WebAssembly">
+    <meta name="author" content="Ślażyński Jan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Intel 8086 simulator</title>
+    <script src="./main.js" defer="defer" ></script>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1>Intel 8086 </h1>
+            <h2>16-bit microprocessor simulator</h2>
+        </div>
+        <div id="tech">
+            <img src="./assets/ts_logo.svg" alt="Typescript Logo SVG">
+            <img src="./assets/wa_logo.svg" alt="WebAssembly Logo SVG">
+        </div>
+    </header>
+    <div id="root">
+        <div class='jc' style="flex:1;">
+            <div id="gray_circle" class='jc'>
+                <div id="circuit_circle" class='jc'>
+
+
+                    
+                   
+                    <div id="proc" class="jc">
+                        <div id="indent">
+
+                        </div>
+                        <div id="left_pins" class="pin_container">
+                            <div class="pin" id="GND">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="AD14">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="AD13">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="AD12">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="AD11">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="AD10">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="AD9">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="AD8">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="AD7">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="AD6">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="AD5">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="AD4">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="AD3">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="AD2">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="AD1">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="AD0">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="NMI">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="INTR">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="CLK">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="GND">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="right_pins" class="pin_container">
+                            <div class="pin" id="UCC">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="AD15">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="A16/S3">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="A17/S4">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="A18/S5">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="A19/S6">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="BHE/S7">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="NM/MX">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="RD">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="RQ/GT0">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="RQ/GT1">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="LOCK">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="S2">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="S1">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="S0">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="QS0">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="QS1">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="TEST">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="READY">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                            <div class="pin" id="RESET">
+                                <div class="circuit">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="p_text">
+                            <p>&nbspD8086</p>
+                            <p>©INTEL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="flex:2;" >
+            <div class="row">
+                <div id="registers_container" class="window_container">
+                    <div class="window_header">
+                        <p>Registers</p>
+                    </div>
+                    <div id="mreg">
+                        <div class="row">
+                            <div>
+                            </div>
+                            <div>
+                                <p style="margin-right: 5px;">Hex</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <p>AX</p>
+                            </div>
+                            <div class="row">
+                                <p style="margin-right: 5px;" id="AH">00</p>
+                                <p id="AL">00</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <p>BX</p>
+                            </div>
+                            <div class="row">
+                                <p style="margin-right: 5px;" id="BH">00</p>
+                                <p id="BL">00</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <p>CX</p>
+                            </div>
+                            <div class="row">
+                                <p style="margin-right: 5px;" id="CH">00</p>
+                                <p id="CL">00</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <p>DX</p>
+                            </div>
+                            <div class="row">
+                                <p style="margin-right: 5px;" id="DH">00</p>
+                                <p id="DL">00</p>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 15px;">
+                            <div class="">
+                                <p></p>
+                            </div>
+                            <div class="row" >
+                                <p style="margin-right: 20px;">H</p>
+                                <p>L</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <p>SI</p>
+                            </div>
+                            <div >
+                                <p id="SI">0000</p>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div>
+                                <p>DI</p>
+                            </div>
+                            <div  >
+                                <p id="DI">0000</p>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div>
+                                <p>BP</p>
+                            </div>
+                            <div >
+                                <p id="BP">0000</p>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div>
+                                <p>SP</p>
+                            </div>
+                            <div >
+                                <p id="SP">0050</p>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div>
+                                <p>IP</p>
+                            </div>
+                            <div >
+                                <p id="IP">0000</p>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div>
+                                <p>CS</p>
+                            </div>
+                            <div >
+                                <p id="CS">0000</p>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div>
+                                <p>DS</p>
+                            </div>
+                            <div >
+                                <p id="DS">0000</p>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div>
+                                <p>ES</p>
+                            </div>
+                            <div >
+                                <p id="ES">0000</p>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div>
+                                <p>SS</p>
+                            </div>
+                            <div >
+                                <p id="SS">0000</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="window_footer">
+    
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <div id="input_container" class="window_container">
+                        <div class="window_header">
+                            <p>Start address</p>
+                        </div>
+                       
+                        <div style="flex-direction: row;" id="input_div" class="jc">
+                            <p id="gt">&gt;</p>
+                            <input type="text" id="memory_input">
+                        </div>
+                        
+                    </div>
+                    <div id="memory_container" class="window_container">
+                        <div class="window_header">
+                            <p>Memory</p>
+                        </div>
+                        <div id="mem">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div id="stack_container" class="window_container">
+                    <div class="window_header">
+                        <p>Stack</p>
+                    </div>
+                    <div id="staque"></div>
+                </div>
+            </div>
+
+            <div id="input_container" class="window_container">
+                <div class="window_header">
+                    <p>Input</p>
+                </div>
+               
+                <div style="flex-direction: row;" id="input_div" class="jc">
+                    <p id="gt">&gt;</p>
+                    <input type="text" id="main_input" autofocus>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <footer>All rights reserved. Jan Ślażyński 2021</footer>
+</body>
+</html>

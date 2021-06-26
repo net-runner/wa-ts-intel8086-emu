@@ -1,0 +1,20 @@
+{
+  "name": "Intel 8086 Typescript Webassembly simulator",
+  "short_name": "i8086-ts-wa-sim",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#121212",
+  "background_color": "#121212",
+  "display": "standalone",
+  "description": "Simple Intel8086 simulator coded using Typescript and Webassembly, bundled by Webpack"
+}
