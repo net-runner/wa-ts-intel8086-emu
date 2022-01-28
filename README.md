@@ -9,4 +9,4 @@ purpose of making this was passing a semester in college. 😫
 `npm start`  - starts build server
 
 ## Screenshots
-![Main][<img width="900px" src="https://github.com/net-runner/wa-ts-intel8086-emu/blob/master/screenshots/main.PNG" />]
+[<img width="900px" src="https://github.com/net-runner/wa-ts-intel8086-emu/blob/master/screenshots/main.PNG" />
