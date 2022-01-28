@@ -5,5 +5,5 @@ To be really clear. This project just scratches the surface of Intel8086. The tr
 purpose of making this was passing a semester in college. 😫
 
 ## Run
-*`npm install` - installs all deps
-*`npm start`  - starts build server
+`npm install` - installs all deps
+`npm start`  - starts build server
